@@ -1,4 +1,5 @@
 class Person {
+  #bags
   constructor(name, destination) {
     this.name = name;
     this.destination = destination;

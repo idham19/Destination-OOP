@@ -13,7 +13,7 @@ describe("Person property test", () => {
     expect(typeof person.destination).toBe("string");
   });
   test("bags array initial value should be empty array", () => {
-    expect(person.bags).toEqual([]);
+    expect(person.getBags()).toEqual([]);
   });
 });
 
