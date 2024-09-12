@@ -1,5 +1,5 @@
 class Airport {
-
+static airportCode
 
 }
 

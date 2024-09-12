@@ -23,13 +23,14 @@ describe("Plane property test", () => {
     const plane = new Plane("AAA", "Maldive","Paris");
 
     test("getPassengers()should  Returns the array of passengers.",()=>{
-        expect(plane.getPassengers()).toBe(plane.passengers)
+        plane.addPassenger("tom")
+        expect(plane.getPassengers()).toEqual(["tom"])
 
     })  
     test("addPassenger(passenger)should Adds the passenger to the passengers array.",()=>{
         const passenger = new Person()
-       plane.addPassengers(passenger)
-       expect(plane.passengers.includes(passenger)).toBe(true)
+       plane.addPassenger(passenger)
+       expect(plane.getPassengers().includes(passenger)).toBe(true)
     })  
 
   });

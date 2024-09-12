@@ -23,9 +23,9 @@ describe("Person Methods", () => {
   test("addBag(bag) should Updates the bags array with a bag.", () => {
     const bag = new Bag()
     person.addBag(bag);
-    expect(person.bags.includes(bag)).toBe(true);
+    expect(person.getBags().includes(bag)).toBe(true);
   });
   test("getBags() should Returns the array of bags.", () => {
-    expect(person.getBags()).toBe(person.bags);
+    expect(person.getBags()).toBe(person.#bags);
   });
 });
