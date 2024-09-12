@@ -7,7 +7,7 @@ class Person {
   }
 
   getBags() {
-    return this.bags;
+    return this.#bags;
   }
   addBag(bag) {
     this.#bags.push(bag);

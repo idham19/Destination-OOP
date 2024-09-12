@@ -19,13 +19,13 @@ describe("Person property test", () => {
 
 describe("Person Methods", () => {
   const person = new Person("thomas", "Maldive");
-
+  const bag = new Bag()
+  
   test("addBag(bag) should Updates the bags array with a bag.", () => {
-    const bag = new Bag()
     person.addBag(bag);
     expect(person.getBags().includes(bag)).toBe(true);
   });
   test("getBags() should Returns the array of bags.", () => {
-    expect(person.getBags()).toBe(person.#bags);
+    expect(person.getBags()).toEqual([bag]);
   });
 });
